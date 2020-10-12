@@ -1,0 +1,26 @@
+{% extends 'header.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+<center>
+    <div class="jumbotron" style="height:600px; width:450px;">
+    <h2 style="margin-top:50px; width:400px;background-color:white">LOGIN</h2>
+        <form action="/home" class="jumbotron" style="margin-top:10px;width:400px;">
+            <h4>
+                <div><input type="text" placeholder="ENTER NAME" required></div>
+                <div style="margin-top:50px"><input type="password" placeholder="PASSWORD" required></div>
+                <input type="submit" value="LOGIN" class="btn btn-primary" style="margin-top:60px">
+                <input type="submit" value="RESET" class="btn btn-primary" style="margin-top:60px">
+            </h4>
+        </form>
+    </div>
+</center>
+{% endblock %}
+</body>
+</html>
